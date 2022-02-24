@@ -8,40 +8,45 @@
         margin: 0;
         text-align: center;
       }
-      section {
-        width: 56vw;
-        min-width: 600px;
-        margin: 8vh auto;
-        position: relative;
+
+      div {
+        margin: 6vw auto;
+        max-width: 1024px;
       }
 
-      section > img {
-        width: 100%;
-      }
-      a {
-        outline: none;
-        width: 33%;
+      div > * {
         display: inline-block;
       }
 
-      a img {
-        width: 100%;
-        height: auto;
+      div img {
+        max-width: 100%;
+      }
+
+      a {
+        border: none;
+        outline: none;
+        width: 32%;
+      }
+
+      @media (max-width: 1280px) {
+        div {
+          width: 100%;
+        }
       }
     </style>
   </head>
   <body>
-    <section>
+    <div>
       <img id="about" src="./about_andreas.png" />
-      <a href="https://twitter.com/AndreasAbilio"
-        ><img src="./twitter_andreas.png"
-      /></a>
-      <a href="https://github.com/andreasabilio"
-        ><img src="./github_andreas.png"
-      /></a>
-      <a href="https://www.linkedin.com/in/andreasabilio/"
-        ><img src="./linkedin_andreas.png"
-      /></a>
-    </section>
+      <a href="https://twitter.com/AndreasAbilio">
+        <img src="./twitter_andreas.png" />
+      </a>
+      <a href="https://github.com/andreasabilio">
+        <img src="./github_andreas.png" />
+      </a>
+      <a href="https://www.linkedin.com/in/andreasabilio/">
+        <img src="./linkedin_andreas.png" />
+      </a>
+    </div>
   </body>
 </html>
